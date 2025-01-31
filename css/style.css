@@ -689,3 +689,58 @@ img {
         image-rendering: -webkit-optimize-contrast;
     }
 }
+
+footer {
+    display: flex;
+    padding: 160px 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25%;
+}
+
+.footTitle {
+    width: fit-content;
+    font-size: 38px;
+    text-align: left;
+    margin-left: 10px;
+    padding: 20px 0;
+}
+
+footer h2 {
+    margin: 10px 0;
+    font-size: 22px;
+    text-transform: uppercase;
+
+    span {
+        font-size: 28px;
+        color: var(--main-color);
+    }
+
+
+}
+
+footer h3 span {
+    color: var(--main-color);
+}
+
+.links ul {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    margin-left: 20px;
+
+    li {
+        color: var(--light-color);
+    }
+
+    li:hover {
+        color: var(--main-color);
+    }
+}
+
+.Social {
+    margin-left: 36px;
+    font-size: 32px;
+    width: 200px;
+}
