@@ -1,0 +1,691 @@
+/* Start Variable */
+:root {
+    --main-color: #00C678;
+    --light-color: ;
+
+}
+
+/* End Variable */
+/* Start Global Styling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow-x: hidden; */
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+a:visited {
+    color: inherit;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Start Modes */
+/* Start Dark Mode */
+.DarkMode {
+    background-color: #050923;
+    color: var(--light-color);
+    transition: 0.3s;
+}
+
+.DarkMode .sideBar h1:hover,
+.DarkMode .sideBar h2:hover,
+.DarkMode .sideBar h3:hover,
+.DarkMode .sideBar p:hover,
+.DarkMode .sideBar span:hover,
+.DarkMode .sideBar i:hover,
+.DarkMode .sideBar a:hover {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+/* End Dark Mode */
+/* Start Light Mode */
+.LightMode .sideBar h1:hover,
+.LightMode .sideBar h2:hover,
+.LightMode .sideBar h3:hover,
+.LightMode .sideBar p:hover,
+.LightMode .sideBar span:hover,
+.LightMode .sideBar i:hover,
+.LightMode .sideBar a:hover {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.LightMode {
+    background-color: white;
+    color: var(--light-color);
+    transition: 0.3s;
+}
+
+/* End Light Mode */
+/* End Modes */
+
+/* End Global Styling */
+
+/* Start Side Bar Styling */
+.sideBar {
+    padding: 20px;
+    position: fixed;
+    font-size: 25px;
+}
+
+.sideBar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(25px) brightness(0.9);
+    background-color: inherit;
+    z-index: -1;
+}
+
+.sideBar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Medium To Large */
+@media (min-width: 991px) {
+    .glow-text {
+        font-size: 34px;
+        color: var(--main-color);
+        text-shadow: 0 0 5px var(--main-color), 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 40px var(--main-color);
+    }
+
+    .sideBar {
+        top: 0;
+        left: -1px;
+        height: 101%;
+        width: 120px;
+        border-right: 1px solid rgba(255, 255, 255, 0.301);
+        z-index: 9999;
+
+    }
+
+    .sideBar ul {
+        flex-direction: column;
+    }
+
+    .sideBar ul li {
+        display: block;
+        margin-bottom: 80px;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 999;
+        position: relative;
+    }
+
+    aside {
+        height: 100vh;
+        width: calc(100vw - 120px);
+        margin: 0px 0 0 103px;
+        transition: .7s;
+    }
+
+    .buttonContainer {
+        appearance: none;
+        border: 1px solid var(--main-color);
+        width: 50px;
+        height: 21px;
+        border-radius: 25px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 6px 2px;
+    }
+
+    .cycle {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 2px;
+        margin: 1px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 8px; */
+        text-align: center;
+        transition: .3s;
+    }
+
+    .ad {
+        min-height: 400px;
+        width: 100vw;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        background-color: inherit;
+        transition: 0.3s;
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: end;
+        }
+
+
+    }
+
+    .textArea {
+        position: absolute;
+        bottom: 20px;
+        font-size: 16px;
+        text-align: left;
+        width: 50%;
+        left: 140px;
+        color: white;
+        height: 200px;
+    }
+
+    .stars {
+        color: var(--main-color);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: fit-content;
+        transition: 0.3s;
+
+    }
+
+    .review {
+        margin: 0 5px;
+    }
+
+    /* End Aside Styling */
+
+    .likes {
+        display: inline;
+        margin: 0 2px;
+    }
+
+    .container {
+        position: relative;
+        width: 100vw;
+        max-width: 100%;
+        padding: 25px;
+        margin: 30px 0;
+
+        .containerContentBody {
+            width: 7000px;
+            /* max-width: 100%; */
+            height: 500px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 25px;
+            padding: 0px 39px;
+        }
+    }
+
+    .Card {
+        overflow: hidden;
+        height: 450px;
+        border-radius: 12px;
+        width: 370px;
+        position: relative;
+        background-color: #00c6788c;
+        padding: 1px;
+        border: 1px solid #eeeeee24;
+
+    }
+
+    .Card::before {
+        content: '';
+        background-color: black;
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: .5;
+
+    }
+
+    .Card:hover {
+        .Card::before {
+
+            width: 100%;
+            height: 50%;
+        }
+    }
+
+    .Card:hover .CardTitle,
+    .Card:hover .CardHearts {
+        transform: translateY(-150px);
+        transition: 0.3s;
+    }
+
+    .head {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .containerTitle {
+            font-size: 42px;
+            letter-spacing: -3px;
+            line-height: 10px;
+            margin-left: 32px;
+
+            span {
+                font-size: 28px;
+                letter-spacing: 1.2px;
+            }
+        }
+    }
+
+    .CardTitle {
+        margin: 8px 12px;
+        color: var(--main-color);
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 32px;
+    }
+
+    .TvList,
+    .movieList,
+    .SearchBar {
+        flex-wrap: wrap;
+        width: 100vw;
+        margin: 80px auto 0 150px;
+        gap: 20px;
+        justify-content: left;
+        align-items: center;
+        align-content: center;
+    }
+
+
+}
+
+/* Small To Medium */
+@media (min-width: 300px) and (max-width:990px) {
+    .glow-text {
+        font-size: 26px;
+        color: var(--main-color);
+        text-shadow: 0 0 5px var(--main-color), 0 0 10px var(--main-color), 0 0 20px var(--main-color), 0 0 40px var(--main-color);
+    }
+
+    .sideBar {
+        z-index: 99999999999;
+        bottom: 0;
+        width: 100vw;
+        height: 120px;
+        border-top: 1px solid rgba(255, 255, 255, 0.301);
+    }
+
+    .sideBar ul {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    aside {
+        /* height: calc(100vh - 120px); */
+        width: 100vw;
+        transition: .7s;
+        overflow-x: hidden;
+
+    }
+
+    .textArea {
+        position: absolute;
+        bottom: 30px;
+        font-size: 16px;
+        text-align: left;
+        color: var(--light-color);
+        height: 200px;
+        transition: 0.3s;
+        left: 20px;
+    }
+
+    .buttonContainer {
+        appearance: none;
+        border: 1px solid var(--main-color);
+        width: 50px;
+        height: 21px;
+        border-radius: 25px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 6px 2px;
+    }
+
+    .cycle {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 2px;
+        margin: 1px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 8px; */
+        text-align: center;
+        transition: .3s;
+    }
+
+    .stars {
+        color: var(--main-color);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: fit-content;
+        transition: 0.3s;
+    }
+
+    .ad {
+        height: 400px;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                min-height: 100%;
+                min-width: 100%;
+            }
+        }
+
+
+    }
+
+
+    .container {
+        position: relative;
+        width: 100vw;
+        max-width: 100%;
+        margin: 30px 0;
+
+        .containerContentBody {
+            border-top: 1px solid #eeeeee24;
+            border-bottom: 1px solid #eeeeee24;
+            max-width: 100%;
+            height: 500px;
+            width: 5000px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            column-gap: 30px;
+
+        }
+    }
+
+
+    .CardTitle {
+        margin: 8px 12px;
+        color: var(--main-color);
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+
+    .img {
+        max-height: 100%;
+    }
+
+    .Card {
+        height: 300px;
+        border-radius: 12px;
+        width: 370px;
+        position: relative;
+        background-color: #00c6788c;
+        padding: 1px;
+        border: 1px solid #eeeeee24;
+
+    }
+
+    .head {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: fit-content;
+        gap: 20px;
+        margin: 0 auto;
+    }
+
+    .date {
+        display: none;
+    }
+
+    .TvList,
+    .movieList,
+    .SearchBar {
+        flex-wrap: wrap;
+        width: 100vw;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: calc(100vh - 120px);
+        padding-top: 80px;
+    }
+}
+
+/* End Side Bar Styling */
+
+/* Start Aside Styling */
+aside {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    transition: 0.3s;
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+.left {
+    left: 15px;
+}
+
+.right {
+    right: 15px;
+}
+
+
+.CardHearts {
+    margin-left: 14px;
+    font-size: 22px;
+    color: var(--main-color);
+
+    .voting {
+        margin-left: 6px;
+        font-size: 16px;
+        color: white;
+    }
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 50%;
+    color: var(--main-color);
+    background-color: black;
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+
+
+.date {
+    margin-left: 5px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: white;
+}
+
+.img1 {
+    max-height: 100%;
+    transition: .5s;
+    max-width: 100%;
+    width: 100%;
+}
+
+.img {
+    max-width: 100%;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+.containerContentBody {
+    transition: 1s;
+}
+
+.containerContent {
+    overflow-x: scroll;
+    overflow-Y: hidden;
+    scrollbar-width: none;
+    transition: .3s;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 15px;
+}
+
+.container {
+    border-top: 1px solid var(--light-color);
+    border-bottom: 1px solid var(--light-color);
+}
+
+.active {
+    color: var(--main-color) !important;
+}
+
+.movieList,
+.TvList,
+.SearchBar {
+    display: none;
+    transition: .7s;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+
+
+
+
+.ExploreMore {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.searchContainer {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    z-index: 30;
+    height: 50px;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+    padding: 15px 0;
+
+    input {
+        width: 300px;
+        height: 90%;
+
+        padding: 20px;
+        background-color: var(--light-color);
+        outline: none;
+        color: var(--main-color);
+        border: 1px solid var(--main-color);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-radius: 12px;
+
+        &::placeholder {
+            color: var(--main-color);
+        }
+    }
+}
+
+.img1 {
+    object-position: center;
+    object-fit: fill;
+}
+
+img {
+    /* image-rendering: crisp-edges; */
+    image-rendering: -webkit-optimize-contrast;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: contrast(110%) brightness(105%) sharpness(1.2) !important;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}

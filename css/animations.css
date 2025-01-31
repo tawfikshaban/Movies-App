@@ -1,0 +1,33 @@
+/* .FromBottomToTop {
+    animation: FromBottomToTop 3.8s linear 19;
+} */
+
+
+
+/* 
+.FromTopToBottom {
+    animation: FromTopToBottom 1.5s linear 19;
+} */
+
+@keyframes FromBottomToTop {
+
+    0%,
+    100% {
+        bottom: -209px;
+    }
+
+    50% {
+        bottom: 40px;
+    }
+}
+
+/* 
+@keyframes FromTopToBottom {
+    from {
+        bottom: 40px;
+    }
+
+    to {
+        bottom: -209px;
+    }
+} */
