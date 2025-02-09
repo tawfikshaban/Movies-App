@@ -40,8 +40,8 @@ axios
     document.querySelector(
       ".title"
     ).textContent = `${movies[count].original_title}`;
-    document.querySelector(".ad a").setAttribute("href", `https://www.google.com/search?q=https://egybest.onl/${movies[count].original_title}/`);
-    document.querySelector(".ad a ").setAttribute("target", "_blank");
+    document.querySelector(".ad a").setAttribute("href", `https://www.google.com/search?q=https://egybest.onl/مشاهدة-فيلم-${movies[count].original_title}/`);
+    document.querySelector(".ad a ").setAttribute("target", "_self");
     count++;
     if (count === 20) {
       count = 0;
@@ -70,9 +70,9 @@ axios
       document.querySelector(
         ".title"
       ).textContent = `${movies[count].original_title}`;
-      document.querySelector(".ad a").setAttribute("href", `https://www.google.com/search?q=https://egybest.onl/${movies[count].original_title}/`);
+      document.querySelector(".ad a").setAttribute("href", `https://www.google.com/search?q=https://egybest.onl/مشاهدة-فيلم-${movies[count].original_title}/`);
       ;
-      document.querySelector(".ad a ").setAttribute("target", "_blank");
+      document.querySelector(".ad a ").setAttribute("target", "_self");
       count++;
       if (count === 20) {
         count = 0;
@@ -189,7 +189,7 @@ axios
       img.src = `${imgUrl}${Tvs[i].
         poster_path}`
       link.appendChild(img);
-      link.href = `https://www.google.com/search?q=${Tvs[i].name}`;
+      link.href = `https://www.google.com/search?q=https://egybest.onl/${Tvs[i].name}`;
       div.classList.add("Card")
       h1.classList.add("CardTitle")
       Likes.classList.add("CardHearts")
@@ -230,7 +230,7 @@ axios
       img.src = `${imgUrl}${Tvs[i].
         poster_path}`
       link.appendChild(img);
-      link.href = `https://www.google.com/search?q=${Tvs[i].name}`;
+      link.href = `https://www.google.com/search?q=https://egybest.onl/${Tvs[i].name}`;
       div.classList.add("Card")
       h1.classList.add("CardTitle")
       Likes.classList.add("CardHearts")
@@ -285,7 +285,7 @@ axios
       img.src = `${imgUrl}${PopularMovies[i].
         poster_path}`
       link.appendChild(img);
-      link.href = `https://www.google.com/search?q=${PopularMovies[i].title}`;
+      link.href = `https://www.google.com/search?q=https://egybest.onl/${PopularMovies[i].title}`;
       div.classList.add("Card")
       h1.classList.add("CardTitle")
       Likes.classList.add("CardHearts")
@@ -327,7 +327,7 @@ axios
       img.src = `${imgUrl}${PopularMovies[i].
         poster_path}`
       link.appendChild(img);
-      link.href = `https://www.google.com/search?q=${PopularMovies[i].title}`;
+      link.href = `https://www.google.com/search?q=https://egybest.onl/${PopularMovies[i].title}`;
       div.classList.add("Card")
       h1.classList.add("CardTitle")
       Likes.classList.add("CardHearts")
@@ -369,7 +369,7 @@ axios
       img.classList.add("img")
       img.src = `${imgUrl}${PopularMovies[i].backdrop_path}`
       link.appendChild(img);
-      link.href = `https://www.google.com/search?q=${PopularMovies[i].title}`;
+      link.href = `https://www.google.com/search?q=https://egybest.onl/${PopularMovies[i].title}`;
       div.classList.add("Card")
       h1.classList.add("CardTitle")
       Likes.classList.add("CardHearts")
@@ -424,7 +424,7 @@ axios
       img.classList.add("img")
       img.src = `${imgUrl}${UpComingMovies[i].poster_path}`
       link.appendChild(img);
-      link.href = `https://www.google.com/search?q=${UpComingMovies[i].title}`;
+      link.href = `https://www.google.com/search?q=https://egybest.onl/${UpComingMovies[i].title}`;
       div.classList.add("Card")
       h1.classList.add("CardTitle")
       Likes.classList.add("CardHearts")
@@ -465,7 +465,7 @@ axios
       img.classList.add("img")
       img.src = `${imgUrl}${UpComingMovies[i].poster_path}`
       link.appendChild(img);
-      link.href = `https://www.google.com/search?q=${UpComingMovies[i].title}`;
+      link.href = `https://www.google.com/search?q=https://egybest.onl/${UpComingMovies[i].title}`;
       div.classList.add("Card")
       h1.classList.add("CardTitle")
       Likes.classList.add("CardHearts")
@@ -507,7 +507,7 @@ axios
       img.classList.add("img")
       img.src = `${imgUrl}${UpComingMovies[i].poster_path}`
       link.appendChild(img);
-      link.href = `https://www.google.com/search?q=${UpComingMovies[i].title}`;
+      link.href = `https://www.google.com/search?q=https://egybest.onl/${UpComingMovies[i].title}`;
       div.classList.add("Card")
       h1.classList.add("CardTitle")
       Likes.classList.add("CardHearts")
