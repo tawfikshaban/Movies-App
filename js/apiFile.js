@@ -40,7 +40,7 @@ axios
     document.querySelector(
       ".title"
     ).textContent = `${movies[count].original_title}`;
-    document.querySelector(".ad a").setAttribute("href", `https://www.google.com/search?q=${movies[count].original_title}`);
+    document.querySelector(".ad a").setAttribute("href", `https://www.google.com/search?q=https://egybest.onl/${movies[count].original_title}/`);
     document.querySelector(".ad a ").setAttribute("target", "_blank");
     count++;
     if (count === 20) {
@@ -70,7 +70,8 @@ axios
       document.querySelector(
         ".title"
       ).textContent = `${movies[count].original_title}`;
-      document.querySelector(".ad a").setAttribute("href", `https://www.google.com/search?q=${movies[count].original_title}`);
+      document.querySelector(".ad a").setAttribute("href", `https://www.google.com/search?q=https://egybest.onl/${movies[count].original_title}/`);
+      ;
       document.querySelector(".ad a ").setAttribute("target", "_blank");
       count++;
       if (count === 20) {
